@@ -4,5 +4,5 @@
 
 Available List :
 
-- [x] Esewa
+- [x] Esewa (https://github.com/sudiptpa/esewa)
 - [ ] Khalti

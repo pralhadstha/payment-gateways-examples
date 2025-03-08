@@ -19,8 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'taxAmount' => $_POST['taxAmount'],
             'totalAmount' => $_POST['totalAmount'],
             'productCode' => $_POST['productCode'],
-            'returnUrl' => 'http://localhost/works/esewa-example/example/index.php',
-            'failedUrl' => 'http://localhost/works/esewa-example/example/index.php',
+            'returnUrl' => 'http://localhost/esewa/example/index.php',
+            'failedUrl' => 'http://localhost/esewa/example/index.php',
         ])->send();
 
         if ($response->isRedirect()) {
