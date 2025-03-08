@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
+require './function.php';
 
 use Omnipay\Omnipay;
 
@@ -9,6 +10,9 @@ $gateway = Omnipay::create('Esewa_Secure');
 $gateway->setMerchantCode('EPAYTEST');
 $gateway->setSecretKey('8gBm/:&EnhH.1/q');
 $gateway->setTestMode(true);
+
+//Generates a random product code for demo purpose.
+$code = getCode();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
@@ -52,6 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['data'])) {
     <input type="hidden" name="serviceCharge" value="0">
     <input type="hidden" name="taxAmount" value="0">
     <input type="hidden" name="totalAmount" value="100">
-    <input type="hidden" name="productCode" value="ABADC2098">
+    <input type="hidden" name="productCode" value=<?php echo $code ?>>
     <input type="submit" value="Pay with eSewa">
 </form>
