@@ -4,5 +4,5 @@
 
 Available List :
 
-- [x] Esewa (https://github.com/sudiptpa/esewa)
+- [x] Esewa ePay v2 (https://github.com/sudiptpa/esewa)
 - [ ] Khalti
