@@ -1,0 +1,12 @@
+{
+    "require": {
+        "pralhadstha/omnipay-khalti": "^1.0",
+        "php-http/httplug": "^2.4",
+        "league/omnipay": "^3.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
